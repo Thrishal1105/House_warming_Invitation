@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --gold: #C9A34E;
+  --cream: #F8F1E5;
+  --brown: #3D2B1F;
+  --shimmer-speed: 3s;
+}
+
+@layer base {
+  body {
+    @apply font-lora bg-cream text-brown leading-relaxed overflow-x-hidden;
+  }
+  
+  h1, h2, h3, h4 {
+    @apply font-cinzel uppercase tracking-[0.2em];
+  }
+}
+
+@layer components {
+  .gold-text {
+    @apply text-gold;
+    background: linear-gradient(
+      to right,
+      #C9A34E 0%,
+      #FFE8B3 25%,
+      #C9A34E 50%,
+      #FFE8B3 75%,
+      #C9A34E 100%
+    );
+    background-size: 200% auto;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: shimmer var(--shimmer-speed) linear infinite;
+  }
+
+  .parchment-bg {
+    @apply bg-cream;
+    background-image: url("https://www.transparenttextures.com/patterns/parchment.png");
+  }
+}
+
+@keyframes shimmer {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gold);
+  border-radius: 4px;
+}
