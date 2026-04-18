@@ -136,8 +136,6 @@ function App() {
           </motion.div>
         </motion.div>
 
-        
-
         <div className="absolute bottom-0 left-0 right-0 h-32 sm:h-48 bg-gradient-to-t from-[#F5E6CA] to-transparent z-10" />
       </div>
 
@@ -172,7 +170,7 @@ function App() {
         <Divider />
         <div className="grid md:grid-cols-2 gap-6 sm:gap-10 mt-8 sm:mt-12 text-sm sm:text-base">
           <div className="p-6 sm:p-10 border border-[#B68D40]/20 rounded-2xl sm:rounded-3xl bg-white/40 backdrop-blur-md shadow-sm">
-            <h3 className="text-lg sm:text-2xl mb-2 sm:mb-4 heritage-red">Satyanarayana Swamy</h3>
+            <h3 className="text-lg sm:text-2xl mb-2 sm:mb-4 heritage-red">Satyanarayana Swamy Vratham</h3>
             <p className="opacity-80 italic">Followed by traditional housewarming rituals and divine blessings from elders.</p>
           </div>
           <div className="p-6 sm:p-10 border border-[#B68D40]/20 rounded-2xl sm:rounded-3xl bg-white/40 backdrop-blur-md shadow-sm">
@@ -212,13 +210,17 @@ function App() {
       <Section className="mb-20 sm:mb-32">
         <Heart className="mx-auto mb-6 sm:mb-8 heritage-red w-8 h-8 sm:w-10 sm:h-10 fill-[#800000]/10" />
         <h2 className="text-lg sm:text-2xl opacity-60 font-cinzel mb-2 sm:mb-4 tracking-[0.2em] sm:tracking-[0.3em] heritage-gold">Invited By</h2>
-        <p className="text-2xl sm:text-5xl md:text-7xl font-cinzel heritage-red font-bold mb-8 sm:mb-12 px-2 drop-shadow-sm">Mrs. Mangamma & Mr. Yellaiah</p>
+        <div className="flex flex-col items-center gap-2 sm:gap-4 mb-8 sm:mb-12">
+          <span className="text-2xl sm:text-5xl md:text-7xl font-cinzel heritage-red font-bold drop-shadow-sm">Mrs. Mangamma</span>
+          <span className="text-xl sm:text-4xl font-cinzel heritage-gold italic opacity-60">&</span>
+          <span className="text-2xl sm:text-5xl md:text-7xl font-cinzel heritage-red font-bold drop-shadow-sm">Mr. Yellaiah</span>
+        </div>
         <div className="flex flex-col sm:flex-row justify-center gap-6 sm:gap-16">
           <div className="flex items-center justify-center gap-3 sm:gap-4 group cursor-pointer bg-white/20 p-4 rounded-xl shadow-sm border border-transparent hover:border-[#B68D40]/30 transition-all">
             <div className="p-2 sm:p-3 rounded-full bg-[#800000]/10 group-hover:bg-[#800000]/20 transition-colors">
               <Phone className="w-4 h-4 sm:w-5 sm:h-5 heritage-red" />
             </div>
-            <p className="text-base sm:text-xl font-light">+91 6300139286</p>
+            <p className="text-base sm:text-xl font-light">+91 6300392286</p>
           </div>
           <div className="flex items-center justify-center gap-3 sm:gap-4 group cursor-pointer bg-white/20 p-4 rounded-xl shadow-sm border border-transparent hover:border-[#B68D40]/30 transition-all">
             <div className="p-2 sm:p-3 rounded-full bg-[#800000]/10 group-hover:bg-[#800000]/20 transition-colors">
