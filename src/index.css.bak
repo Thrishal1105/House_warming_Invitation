@@ -7,18 +7,11 @@
   --cream: #F8F1E5;
   --brown: #3D2B1F;
   --shimmer-speed: 3s;
-
-  /* Royal Heritage Palette (Approved Option 1) */
-  --heritage-gold: #B68D40;
-  --heritage-red: #800000;
-  --heritage-text: #2D1B08;
-  --heritage-bg: #F5E6CA;
 }
 
 @layer base {
   body {
-    @apply font-lora bg-cream leading-relaxed overflow-x-hidden;
-    color: var(--heritage-text);
+    @apply font-lora bg-cream text-brown leading-relaxed overflow-x-hidden;
   }
   
   h1, h2, h3, h4 {
@@ -27,7 +20,6 @@
 }
 
 @layer components {
-  /* Dynamic Shimmering Gold (Kept for Hero) */
   .gold-text {
     @apply text-gold;
     background: linear-gradient(
@@ -45,24 +37,9 @@
     animation: shimmer var(--shimmer-speed) linear infinite;
   }
 
-  /* Heritage Antique Gold */
-  .heritage-gold {
-    color: var(--heritage-gold);
-  }
-
-  /* Heritage Temple Red */
-  .heritage-red {
-    color: var(--heritage-red);
-  }
-
   .parchment-bg {
-    background-color: var(--heritage-bg);
+    @apply bg-cream;
     background-image: url("https://www.transparenttextures.com/patterns/parchment.png");
-  }
-
-  /* Contrast Hero Overlay */
-  .hero-overlay {
-    background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.2) 50%, transparent);
   }
 }
 
@@ -78,10 +55,10 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--heritage-bg);
+  background: var(--cream);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--heritage-gold);
+  background: var(--gold);
   border-radius: 4px;
 }
