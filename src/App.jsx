@@ -136,15 +136,7 @@ function App() {
           </motion.div>
         </motion.div>
 
-        {/* Scroll Indicator */}
-        <motion.div 
-          animate={{ y: [0, 8, 0] }}
-          transition={{ duration: 2, repeat: Infinity }}
-          className="absolute bottom-10 left-1/2 -translate-x-1/2 text-white/60 z-30 text-center"
-        >
-          <div className="w-[1px] h-10 sm:h-12 bg-gradient-to-b from-white to-transparent mx-auto mb-2" />
-          <p className="text-[10px] font-cinzel tracking-[0.3em] uppercase opacity-50">Scroll Down</p>
-        </motion.div>
+        
 
         <div className="absolute bottom-0 left-0 right-0 h-32 sm:h-48 bg-gradient-to-t from-[#F5E6CA] to-transparent z-10" />
       </div>
